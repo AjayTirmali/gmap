@@ -1,0 +1,127 @@
+.location-form-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.location-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.location-input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+.submit-btn,
+.current-location-btn,
+.switch-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #1976d2;
+  color: white;
+}
+
+.current-location-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.switch-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+}
+
+.submit-btn:hover,
+.current-location-btn:hover,
+.switch-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.submit-btn:disabled,
+.current-location-btn:disabled,
+.switch-btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.location-display {
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #666;
+}
+
+.loading-spinner::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  border: 2px solid #666;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+} 
